@@ -1,0 +1,12 @@
+<h2 class="title">Produtos da loja</h2>
+{{#each produtos}}
+<br>
+
+<div class="product-cointainer">
+<a href="">
+<h3 class="main-data">{{this.name}} - R${{this.price}}</h3>
+<p class="category">categoria: {{this.category}}</p>
+<a class="button-buy" href="/produto/{{this.id}}" >COMPRAR</a>
+</div>
+
+{{/each}}
